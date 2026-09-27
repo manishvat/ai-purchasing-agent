@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AI Purchasing Agent</title><link rel="stylesheet" href="/styles.css"></head>
+<body>
+<header class="topbar"><div><div class="eyebrow">FULL-STACK AI AGENT</div><h1>AI Purchasing Agent</h1><p>Investigate → Decide → Act → Validate</p></div><span class="badge">Mock procurement environment</span></header>
+<main class="shell">
+<section class="card request-card"><div><h2>1. Create a purchase request</h2><p>Describe what the buyer needs. The agent evaluates mock supplier data.</p></div>
+<form id="purchaseForm"><div class="grid">
+<label>Item<input id="item" value="Business laptops" required></label>
+<label>Category<select id="category"><option value="laptop">Laptop</option></select></label>
+<label>Quantity<input id="quantity" type="number" min="1" value="5" required></label>
+<label>Total budget (₹)<input id="budget" type="number" min="1" value="400000" required></label>
+<label>Priority<select id="priority"><option value="standard">Standard</option><option value="urgent">Urgent delivery</option><option value="quality">Quality-first</option></select></label>
+</div><button id="runBtn" type="submit">Run purchasing agent</button></form></section>
+<section id="results" class="hidden">
+<div class="pipeline"><div class="step active"><b>01</b><span>Investigate</span></div><div class="line"></div><div class="step active"><b>02</b><span>Decide</span></div><div class="line"></div><div class="step active"><b>03</b><span>Act</span></div><div class="line"></div><div class="step active"><b>04</b><span>Validate</span></div></div>
+<div class="grid-two"><section class="card"><div class="card-head"><h2>Investigation</h2><span class="mini">Supplier intelligence</span></div><div id="vendors"></div></section>
+<section class="card"><div class="card-head"><h2>Decision</h2><span id="decisionStatus" class="status"></span></div><div id="decision"></div></section></div>
+<div class="grid-two"><section class="card"><div class="card-head"><h2>Action</h2><span class="mini">Mock purchase order</span></div><pre id="action"></pre></section>
+<section class="card"><div class="card-head"><h2>Validation</h2><span id="validationStatus" class="status"></span></div><div id="validation"></div></section></div>
+<section id="aiBox" class="card hidden"><div class="card-head"><h2>AI explanation</h2><span class="mini">Optional LLM layer</span></div><div id="aiExplanation"></div></section>
+</section><div id="error" class="error hidden"></div></main>
+<footer>Built as an assignment demo • All supplier data and purchase actions are mocked</footer>
+<script src="/app.js"></script></body></html>
