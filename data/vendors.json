@@ -1,0 +1,6 @@
+[
+  {"id":"v-101","name":"Northstar Office Systems","category":"laptop","unitPrice":78500,"currency":"INR","stock":42,"deliveryDays":2,"warrantyYears":3,"rating":4.7,"returnDays":15,"paymentTerms":"Net 30","risk":"low"},
+  {"id":"v-102","name":"PrimeTech Supplies","category":"laptop","unitPrice":74800,"currency":"INR","stock":18,"deliveryDays":6,"warrantyYears":2,"rating":4.3,"returnDays":7,"paymentTerms":"Net 15","risk":"medium"},
+  {"id":"v-103","name":"Metro Digital Procurement","category":"laptop","unitPrice":81900,"currency":"INR","stock":70,"deliveryDays":1,"warrantyYears":3,"rating":4.8,"returnDays":30,"paymentTerms":"Net 45","risk":"low"},
+  {"id":"v-104","name":"ValueHub Business Store","category":"laptop","unitPrice":69900,"currency":"INR","stock":9,"deliveryDays":10,"warrantyYears":1,"rating":3.9,"returnDays":5,"paymentTerms":"Advance","risk":"high"}
+]
